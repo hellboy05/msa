@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('logisticmodel.pkl', 'rb')) 
+model = pickle.load(open('Naive_Bayes_disease_diagnostic_model.pkl', 'rb')) 
 # Feature Scaling
-dataset = pd.read_csv('Ekta - Classification Dataset1.csv - Ekta - Classification Dataset1.csv.csv')
+dataset = pd.read_csv('DS.csv')
 # Extracting independent variable:
 X = dataset.iloc[:, [1,2,3]].values
 # Encoding the Independent Variable
